@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descargas P.T.A.R.</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Descargas P.T.A.R.</h1>
+        <nav>
+            <!-- Espacio para agregar más pestañas en el futuro -->
+        </nav>
+    </header>
+    <main>
+        <section id="registro">
+            <h2>Registrar Descarga</h2>
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" required>
+            
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" required>
+            
+            <label for="numDescarga">Número de Descarga:</label>
+            <input type="number" id="numDescarga" min="1" required>
+            
+            <label for="foto">Foto:</label>
+            <input type="file" id="foto" accept="image/*" capture="camera">
+            
+            <button onclick="registrarDescarga()">Añadir Descarga</button>
+        </section>
+        
+        <section id="historial">
+            <h2>Historial de Descargas</h2>
+            <table id="tablaDescargas">
+                <thead>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Hora</th>
+                        <th>Turno</th>
+                        <th>Número de Descarga</th>
+                        <th>Foto</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <button onclick="exportarExcel()">Exportar a Excel</button>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; <span id="year"></span> MD</p>
+    </footer>
+</body>
+</html>
