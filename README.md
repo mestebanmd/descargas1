@@ -2,4 +2,4 @@
 
 <p> Esta pagina es utilizada para llevar el control de descargas por dia</p>
 
-<p> Esta en proceso, tiene algunos inconvenientes con la exportacion a excel</p>
+<p> Inician pruebas pilotos </p>
