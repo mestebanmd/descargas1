@@ -73,6 +73,18 @@ button:hover {
     background-color: #005f8b;
 }
 
+.btn-rojo {
+    background-color: rgb(161, 24, 24);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-rojo:hover {
+    background-color: darkred;
+}
 /* Tabla */
 table {
     width: 100%;
