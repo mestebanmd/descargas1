@@ -31,6 +31,8 @@
             <input type="file" id="foto" accept="image/*" capture="camera">
             
             <button onclick="registrarDescarga()">Añadir Descarga</button>
+          
+
         </section>
         
         <section id="historial">
@@ -49,9 +51,21 @@
                 </tbody>
             </table>
             <button onclick="exportarExcel()">Exportar a Excel</button>
+            <button id="btnLimpiar" onclick="limpiarTabla()">Limpiar Descargas</button>
+            <button id="btnBorrar" onclick="borrarDescargas()">Borrar Descargas</button>
         </section>
+  
     </main>
     
+    <footer>
+        <p>&copy; <span id="year"></span> MD</p>
+    </footer>
+
+    <script src="app.js"></script> 
+
+</body>
+</html>
+
     <footer>
         <p>&copy; <span id="year"></span> MD</p>
     </footer>
