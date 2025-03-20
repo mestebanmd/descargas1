@@ -43,7 +43,7 @@ main {
 }
 
 section {
-    background: white;
+    background: rgb(255, 255, 255);
     padding: 20px;
     margin: 20px auto;
     border-radius: 10px;
@@ -101,3 +101,4 @@ footer {
     color: white;
     padding: 10px;
 }
+
